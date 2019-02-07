@@ -1,0 +1,58 @@
+{
+	"manifest_version": 1,
+	"script": "demo.js",
+	"config": {
+		"groups": [
+			{
+				"name": "Test Config Options",
+				"options": [
+					{
+						"id": "your_name",
+						"type": "string",
+						"label": "Whats your name?",
+						"default": "John Smith"
+					},
+					{
+						"id": "age",
+						"type": "integer",
+						"label": "Whats your age?",
+						"min": 13,
+						"max": 100
+					},
+					{
+						"id": "search_engine_url",
+						"type": "choice",
+						"label": "What's your favorite search engine?",
+						"default": "duckduckgo.com/",
+						"choices": {
+							"Google": "google.com/search",
+							"DuckDuckGo": "duckduckgo.com/",
+							"Bing": "bing.com/search"
+						}
+					},
+					{
+						"id": "look_me_up",
+						"type": "boolean",
+						"label": "Search me on the internet",
+						"default": true
+					}
+				]
+			},
+			{
+				"name": "More options",
+				"options": [
+					{
+						"id": "secret",
+						"type": "password",
+						"label": "What's the worst password you can think of?"
+					},
+					{
+						"id": "math_result",
+						"type": "number",
+						"label": "What's 9 / 2 ?"
+					}
+				]
+			}
+		]
+	}
+}
